@@ -50,7 +50,7 @@ The **Nutmeg Kingdom** MVP will track dates across all 4 seasons for different p
 |      React       | _React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications._ |
 |   React Router   | _React Router is a collection of navigational components that compose declaratively with your application._ |
 |   React Axios    | _Axios Component for React with child function callback. This is intended to allow in render async requests._ |
-|      Rails       | _Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages._ |
+|  Ruby on Rails   | _Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages._ |
 |      BCrypt      | _bcrypt() is a sophisticated and secure hash algorithm designed by The OpenBSD project for hashing passwords. The bcrypt Ruby gem provides a simple wrapper for safely handling passwords._ |
 |       JWT        | _JSON Web Token is a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key._ |
 
