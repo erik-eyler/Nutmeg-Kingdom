@@ -19,7 +19,7 @@
 
 ## Overview
 
-_**Nutmeg Kingdom** is a gardening web app for Nutmeggers (people that live in Connecticut or elsewhere in zone 7a) to track the dates of when to plant specific plants year round. 
+**Nutmeg Kingdom** is a gardening web app for Nutmeggers (people that live in Connecticut or elsewhere in zone 7a) to track the dates of when to plant specific plants year round. 
 
 
 <br>
@@ -28,7 +28,7 @@ _**Nutmeg Kingdom** is a gardening web app for Nutmeggers (people that live in C
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Nutmeg Kingdom** MVP will track dates across all 4 seasons for different plants and show users when is the best time to plant. Users will be able to add new plants with their optimal plant dates to the database. Users will be able to create an account and add plants to the database to be able to edit them later if needed. 
+The **Nutmeg Kingdom** MVP will track dates across all 4 seasons for different plants and show users when is the best time to plant. Users will be able to add new plants with their optimal plant dates to the database. Users will be able to create an account and add plants to the database to be able to edit them later if needed. 
 
 <br>
 
@@ -49,8 +49,12 @@ _The **Nutmeg Kingdom** MVP will track dates across all 4 seasons for different 
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Rails        | _Lorem ipsum dolor sit amet, consectetur._ |
+|   React Axios    | _Lorem ipsum dolor sit amet, consectetur._ |
+|      Rails       | _Lorem ipsum dolor sit amet, consectetur._ |
+|      BCrypt      | _Lorem ipsum dolor sit amet, consectetur._ |
+|       JWT        | _Lorem ipsum dolor sit amet, consectetur._ |
+
+
 
 <br>
 
