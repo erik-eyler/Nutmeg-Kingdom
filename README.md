@@ -58,37 +58,14 @@ _The **Nutmeg Kingdom** MVP will track dates across all 4 seasons for different 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+[Wireframe Link] (https://whimsical.com/nutmeg-kingdom-CNQS7fWUSfm4dHhSmUyf9N)
 
-![Dummy Link](url)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree Link](https://drive.google.com/file/d/1cm7x-TCS2Qkl83hPmmE6FVL7CJK3mW7v/view?usp=sharing)
 
 #### Component Architecture
 
@@ -103,12 +80,18 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Navbar.jsx
+      |__ Navbar
       |__ Plants
       |__ Form
       |__ Home
-      |__Layout
-      |__ Menu
+      |__ Layout
+      |__ MainContainer
+      |__ Login
+      |__ Register
+      |__ Create
+      |__ Edit
+      |__ Delete
+      |__ Seasons
       |__ Button
 |__ services/
 
