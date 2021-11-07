@@ -13,39 +13,4 @@ class SeasonsController < ApplicationController
     render json: @season
   end
 
-  # POST /seasons
-  def create
-    @season = Season.new(season_params)
-
-    if @season.save
-      render json: @season, status: :created, location: @season
-    else
-      render json: @season.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /seasons/1
-  def update
-    if @season.update(season_params)
-      render json: @season
-    else
-      render json: @season.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /seasons/1
-  def destroy
-    @season.destroy
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_season
-      @season = Season.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    def season_params
-      params.require(:season).permit(:name)
-    end
 end
