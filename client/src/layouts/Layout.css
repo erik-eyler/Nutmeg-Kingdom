@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 20px 30px;
+}
+
+header.div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+
+/* .layout-menu-plants {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+} */
+
+.layout-children {
+  display: flex;
+}

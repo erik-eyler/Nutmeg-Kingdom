@@ -1,0 +1,11 @@
+.plants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.plant-container {
+  flex: 0 1 30%;
+  
+
+}

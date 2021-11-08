@@ -1,4 +1,5 @@
-import {Link} from 'react-router-dom'
+import './Layout.css'
+import { Link } from 'react-router-dom'
 
 export default function Layout(props) {
   const { children, currentUser, handleLogout } = props;
@@ -9,7 +10,7 @@ export default function Layout(props) {
       <header>
         <h1>Nutmeg Kingdom</h1>
         {currentUser ? (
-          <div>
+          <div className="layout-menu-plants">
             <p>{currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
           </div>
@@ -18,14 +19,17 @@ export default function Layout(props) {
         )}
         <hr />
         {currentUser && (
-          <div>
+          <div className="layout-menu-plants">
             <Link to='/plants'>Plants</Link>
+            <br />
             <Link to='/plants/new'>Add Plant</Link>
             {/* do you need to switch the order of these links? */}
           </div>
         )}
       </header>
-      {children}
+      <div className="layout-children">
+        {children}
+      </div>
     </div>
   );
 }

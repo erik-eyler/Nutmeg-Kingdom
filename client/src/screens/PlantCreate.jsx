@@ -1,3 +1,4 @@
+import './PlantCreate.css'
 import { useState } from 'react';
 
 export default function PlantCreate(props) {
@@ -15,19 +16,23 @@ export default function PlantCreate(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handlePlantCreate(formData);
-      }}
-    >
-      <h1>Add Plant</h1>
-      <label>
-        Name:
-        <input type='text' value={name} onChange={handleChange} />
-      </label>
-      <br />
-      <button>Submit</button>
-    </form>
+    <div className="create-container">
+      <div className="form-container">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handlePlantCreate(formData);
+          }}
+        >
+          <h3 className="user-form-heading">Add Plant</h3>
+          <label classname="user-label">
+            Name:
+            <input className="user-input" type='text' value={name} onChange={handleChange} />
+          </label>
+          <br />
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
   );
 }
