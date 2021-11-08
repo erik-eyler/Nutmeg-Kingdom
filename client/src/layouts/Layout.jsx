@@ -20,7 +20,8 @@ export default function Layout(props) {
         {currentUser && (
           <div>
             <Link to='/plants'>Plants</Link>
-            <Link to='/create'>Add Plant</Link>
+            <Link to='/plants/new'>Add Plant</Link>
+            {/* do you need to switch the order of these links? */}
           </div>
         )}
       </header>
