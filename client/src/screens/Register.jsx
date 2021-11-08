@@ -1,3 +1,4 @@
+import './Register.css'
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -18,40 +19,47 @@ export default function Register(props) {
   };
 
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      props.handleRegister(formData)
-    }}>
-      <h3>Register</h3>
-      <label>
-        Username:
-      <input
-        type="text"
-        name="username"
-        value={username}
-        onChange={handleChange}
-      />
-      </label>
-      <label>
-        Email:
-      <input
-        type="text"
-        name="email"
-        value={email}
-        onChange={handleChange}
-      />
-      </label>
-      <label>
-        Password:
-      <input
-        type="password"
-        name="password"
-        value={password}
-        onChange={handleChange}
-      />
-      </label>
-      <Link to="/login">Already have an account? Login</Link>
-      <button>Submit</button>
-    </form>
+    <div className="register-container">
+      <div className="helper-container">
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          props.handleRegister(formData)
+        }}>
+          <h3 classname="user-form-heading">Register</h3>
+          <label className="user-label">
+            Username:
+          <input
+            className="user-input"
+            type="text"
+            name="username"
+            value={username}
+            onChange={handleChange}
+          />
+          </label>
+          <label className="user-label">
+            Email:
+          <input
+            className="user-input"
+            type="text"
+            name="email"
+            value={email}
+            onChange={handleChange}
+          />
+          </label>
+          <label className="user-label">
+            Password:
+          <input
+            className="user-input"
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+          />
+          </label>
+          <Link to="/login" classname="login-link">Already have an account? Login</Link>
+          <button className="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   );
 }
