@@ -1,6 +1,7 @@
 import './App.css';
 import Layout from './layouts/Layout';
-import {Route, Switch} from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+import Login from './screens/Login';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/login'>
-            <h1>Login</h1>
+            <Login />
           </Route>
         </Switch>
       </Layout>
