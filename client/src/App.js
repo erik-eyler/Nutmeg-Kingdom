@@ -5,6 +5,7 @@ import Login from './screens/Login';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 import { useState, useEffect } from 'react';
 import Register from './screens/Register'
+import MainContainer from './containers/MainContainer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path='/register'>
             <Register handleRegister={handleRegister}/>
+          </Route>
+          <Route path='/'>
+            <MainContainer />
           </Route>
         </Switch>
       </Layout>
