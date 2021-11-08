@@ -2,13 +2,21 @@ import './App.css';
 import Layout from './layouts/Layout';
 import { Route, Switch, useHistory } from 'react-router-dom'
 import Login from './screens/Login';
-import { loginUser, registerUser } from './services/auth';
+import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 import { useState, useEffect } from 'react';
 import Register from './screens/Register'
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
+
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+    };
+    handleVerify();
+  }, []);
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -20,11 +28,17 @@ function App() {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
     history.push('/')
-  }
+  };
+
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('authToken');
+    removeToken();
+  };
 
   return (
     <div className="App">
-      <Layout currentUser={currentUser}>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
